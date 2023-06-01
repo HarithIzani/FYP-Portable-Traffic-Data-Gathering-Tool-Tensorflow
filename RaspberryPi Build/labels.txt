@@ -1,0 +1,11 @@
+bicycle
+bus
+car
+motorcycle
+pedestrian
+rider
+train
+truck
+other vehicle
+other person
+trailer
