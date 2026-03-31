@@ -1,0 +1,9 @@
+# Local Windows development dependencies
+# tflite-runtime has no official Windows wheels for newer Python versions,
+# so use tensorflow-cpu which bundles the TFLite interpreter.
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+numpy>=1.21.0
+pillow>=9.0.0
+tensorflow-cpu>=2.14.0
+python-multipart>=0.0.9

@@ -1,0 +1,8 @@
+# Render / Linux deployment dependencies
+# Python 3.11 recommended (tflite-runtime wheel availability)
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+numpy>=1.21.0
+pillow>=9.0.0
+tflite-runtime>=2.14.0
+python-multipart>=0.0.9

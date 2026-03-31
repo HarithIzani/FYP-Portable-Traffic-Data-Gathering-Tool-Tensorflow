@@ -1,0 +1,13 @@
+# FYP - Portable Traffic Data Gathering Tool
+# Install with: pip install -r requirements.txt
+#
+# NOTE: tflite-runtime is the lightweight package used on Raspberry Pi.
+# If running on a development machine with a full TensorFlow install,
+# replace tflite-runtime with: tensorflow>=2.7.0
+# and change the import in fyp.py to:
+#   from tensorflow.lite.python.interpreter import Interpreter
+
+numpy>=1.21.0
+pandas>=1.3.0
+opencv-python>=4.5.0
+tflite-runtime>=2.7.0
