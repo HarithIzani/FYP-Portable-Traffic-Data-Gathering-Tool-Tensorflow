@@ -15,9 +15,12 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 try:
-    from tflite_runtime.interpreter import Interpreter
+    from ai_edge_litert.interpreter import Interpreter  # Python 3.12+ (Render)
 except ImportError:
-    from tensorflow.lite.python.interpreter import Interpreter  # type: ignore
+    try:
+        from tflite_runtime.interpreter import Interpreter  # type: ignore  # Python 3.11
+    except ImportError:
+        from tensorflow.lite.python.interpreter import Interpreter  # type: ignore  # local dev fallback
 
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
